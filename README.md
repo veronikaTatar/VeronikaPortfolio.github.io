@@ -1,7 +1,7 @@
 # VeronikaPortfolio.github.io
 А short description of my projects
 
-[![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github)](https://github.com/veronikaTatar)  
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github)](https://github.com/veronikaTatar)
 [![Email](https://img.shields.io/badge/-Email-D14836?logo=gmail&logoColor=white)](veronik4578@gmail.com)
 [![Linkedin](https://img.shields.io/badge/-Linkedin-26A5E4?logo=linkedin&logoColor=white)](www.linkedin.com/in/вероника-татарчук-93455a3a7)
 ---
