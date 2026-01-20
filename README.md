@@ -77,7 +77,7 @@
 - **DAO Layer**: Data Access Objects с Hibernate ORM
 - **Database Layer**: PostgreSQL с реляционной схемой
 - **Отчетность**: генерация Excel отчетов через Apache POI
-
+---
 
 ### Beauty Salon Management System - GUI приложение (https://github.com/veronikaTatar/beaitySalon-client-server-)
 **Стек:** `Java`, `JavaFX`, `JDBC`, `SQL`, `TCP/IP`, `Multithreading`
