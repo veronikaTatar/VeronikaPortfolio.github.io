@@ -94,7 +94,7 @@
 - **Паттерны**: Singleton, Abstract Factory, MVC
 ---
 
-**Blogicum: Платформа для ведения блогов на Django** (https://github.com/veronikaTatar/BlogDjango)  
+### BlogDjango (https://github.com/veronikaTatar/BlogDjango)  
 **Стек:** `Python`, `Django`, `Django ORM`, `HTML/CSS`, `Bootstrap`, `Django Templates`, `Django Authentication System`
 
 **Описание:**  
