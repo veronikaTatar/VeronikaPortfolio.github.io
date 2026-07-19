@@ -18,24 +18,19 @@
 ![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-6DB33F?logo=spring&logoColor=white)
 ![Hibernate](https://img.shields.io/badge/Hibernate-59666C?logo=hibernate&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white)
 
 базовые навыки:
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-512BD4?logo=dotnet&logoColor=white)
-![Entity Framework](https://img.shields.io/badge/Entity_Framework-512BD4?logo=dotnet&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white)
-
-
-**Frontend & UI/UX:**
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)
+![Entity Framework](https://img.shields.io/badge/Entity_Framework-512BD4?logo=dotnet&logoColor=white)  
 
 **Базы данных:**
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-000000?logo=sqlalchemy&logoColor=white)  
 
 **Инструменты и платформы:**
 ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
@@ -49,17 +44,57 @@
 ![JUnit5](https://img.shields.io/badge/JUnit5-25A162?logo=junit5&logoColor=white)
 ![Mockito](https://img.shields.io/badge/Mockito-78A641?logo=&logoColor=white)
 ![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?logo=pytest&logoColor=white)
-
-**Принципы и методологии:**  
-- ООП, Паттерны проектирования (GoF+ MVC, Repository, DI)
-- Архитектура: микросервисы (REST)
-- RESTful API, микросервисная архитектура
-- Принципы SOLID, DRY, TDD/BDD
-- DevOps (CI/CD)
+![Unittest](https://img.shields.io/badge/Unittest-FF6C37?logo=python&logoColor=white)   
 
 ---
 
 ## Проекты  
+
+### QRKot: Фонд поддержки котов (https://github.com/veronikaTatar/QRkot-spreadsheets)
+**Стек:** `Python`, `FastAPI`, `SQLAlchemy`, `PostgreSQL`, `AIOHTTP`, `Pydantic`, `JWT`, `FastAPI Users`, `XLSXWriter`, `Yandex Disk API`
+
+**Описание:**  
+QRKot — это веб-приложение для благотворительного фонда поддержки котов, позволяющее создавать целевые проекты (сборы средств на конкретные задачи) и принимать пожертвования. Пожертвования автоматически распределяются между открытыми проектами: средства направляются в самый "старый" проект, который ещё не собрал нужную сумму. Система поддерживает мультиролевую модель (Анонимный пользователь, Зарегистрированный пользователь, Суперпользователь).  
+Интеграция с Яндекс Диском для формирования и публикации Excel-отчётов о скорости закрытия проектов.  
+
+**В ходе работы над проектом было сделано:**
+- создан API-сервис на базе FastAPI с асинхронной архитектурой;
+- реализована автоматическая система распределения пожертвований между открытыми проектами с использованием единой транзакции;
+- реализована интеграция с Яндекс Диском для генерации Excel-отчётов о скорости закрытия проектов;
+- закреплены на практике основы асинхронного программирования и работы с внешними API.
+---
+
+### Foodgram: сервис для публикации рецептов (https://github.com/veronikaTatar/foodgram)
+**Стек:** `Python`, `Django`, `YAML`, `Nginx`, `Gunicorn`, `React`, `Docker`, `PostgreSQL`, `Postman`
+
+**Описание:**  
+Foodgram — это сайт, на котором пользователи могут публиковать свои рецепты, добавлять чужие рецепты в избранное  
+и подписываться на публикации других авторов.  
+
+**В ходе работы над проектом было сделано:**
+- создан API-сервис на базе проекта Django;
+- подключено SPA к бэкенду на Django через API;
+- создано, развёрнуто и запущено на сервере мультиконтейнерное приложение;
+- закреплены на практике основы DevOps, включая CI/CD.
+---
+
+### ContentMarketing: Система контент-маркетинга с модулем планирования публикаций и анализа эффективности контента (https://github.com/veronikaTatar/ContentMarketingBackend)
+**Стек:** `Java 21`, `Spring Boot `, `Spring Data JPA`, `PostgreSQL`, `React 18`, `React`, `TypeScript`, `Vite`, `JWT`, `OAuth 2.`, `REST API`
+
+**Описание:**  
+Веб-приложение для автоматизации процессов контент-маркетинга.
+Мультиролевая система (Администратор, Контент-менеджер, Автор). Интеграция с внешними сервисами (Telegram, Discord) для автоматической публикации контента и сбора статистики. Аутентификация через GitHub OAuth 2.0. Генерация отчетов о нагрузке сотрудников и эффективности контента в Excel файл.  
+
+**Многоуровневая архитектура:**
+- **Presentation Layer**: REST-контроллеры Spring MVC, валидация через @Valid и Jakarta Bean Validation
+- **Application Layer**: Сервисы (@Service) с реализацией бизнес-логики и паттернами Command, Observer, Strategy
+- **Persistence Layer**: Spring Data JPA репозитории, Hibernate ORM, миграции через Flyway
+- **Security Layer**: JWT-аутентификация (access + refresh токены), ролевая модель (RBAC), BCrypt хеширование паролей, OAuth 2.0 / OpenID Connect через GitHub
+- **Client Layer**: React SPA с TypeScript, Redux Toolkit, Axios, адаптивный дизайн
+- **Интеграция**: REST API Telegram и Discord для публикации контента, GitHub API для аутентификации
+- **Аналитика**: Расчет метрик вовлеченности (ER, ERR, охват, виральность), сравнение с целевыми KPI
+- **Документирование API**: SpringDoc OpenAPI 3 (Swagger UI)
+---
 
 ### CinemaFocus: Web-приложение для кинотеатра (https://github.com/veronikaTatar/Web-cinema)
 **Стек:** `Java`, `JSP`, `Servlets`, `Hibernate`, `PostgreSQL`, `Bootstrap`, `MVC Architecture`
