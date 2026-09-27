@@ -51,7 +51,26 @@
 <details open>
 <summary><b>🐍 Python-проекты</b> </summary>
 
-<br>
+<br>  
+
+### Бронирование мест в кафе — командный проект (https://github.com/Yandex-Practicum-Students/72_73_booking_seats_team_4)  
+**Стек:** `Python 3.12`, `FastAPI`, `SQLAlchemy`, `Alembic`, `PostgreSQL`, `Redis`, `Celery`, `RabbitMQ`, `Docker`, `Nginx`, `GitHub Actions`, `JWT`, `Pydantic`, `unittest`  
+
+**Описание:**  
+Backend API для выбора кафе, просмотра меню и акций, бронирования столов и управления заведениями. Проект разработан командой из 8 студентов Яндекс Практикума. Система поддерживает мультиролевую модель (клиент, сотрудник кафе, администратор) и автоматическую отправку уведомлений.  
+
+**Ключевые особенности:**
+- **Фоновые задачи**: Celery + RabbitMQ для email-уведомлений персоналу и напоминаний клиентам, повторная отправка через Celery beat
+- **Кэширование**: Redis для кэширования и хранения активных JWT-сессий
+- **Документация**: интерактивная документация OpenAPI (Swagger UI, ReDoc)
+- **DevOps**: мультиконтейнерный запуск через Docker Compose (приложение, PostgreSQL, Redis, RabbitMQ, Celery worker, Celery beat, Flower), миграции Alembic применяются автоматически при старте
+- **Качество кода**: линтинг через Ruff, тесты на unittest, CI через GitHub Actions  
+
+**Выполненные задачи (личный вклад в роли Backend Developer):**
+- Модели данных и Pydantic-схемы с кастомными валидаторами для Table и Slot
+- CRUD-операции, сервисный слой и API-эндпоинты для Table и Cafe
+- Тесты для CRUD-операций указанных сущностей 
+
 
 ### QRKot: Фонд поддержки котов (https://github.com/veronikaTatar/QRkot-spreadsheets)
 **Стек:** `Python`, `FastAPI`, `SQLAlchemy`, `PostgreSQL`, `AIOHTTP`, `Pydantic`, `JWT`, `FastAPI Users`, `XLSXWriter`, `Yandex Disk API`
